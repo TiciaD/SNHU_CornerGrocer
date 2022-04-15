@@ -44,6 +44,8 @@ FUNCTION readNumber(prompt)
     ENDIF
   ENDWHILE
 
+  RETURN userInput
+
 ENDFUNCTION
 
 ```
@@ -52,4 +54,56 @@ ENDFUNCTION
 Use C++ and Python to produce a list of all items purchased in a given day along with the number of times each item was purchased
 
 ### Variables
+`allItems` ---> list of all unique items and number of occurrences  
+`word` ---> string value of a word from the text file
 ### Functions
+`getAllItems()` ---> returns list of all unique items and occurrences and prints them to the console
+
+### Pseudocode
+```
+FUNCTION getAllItems
+
+  ItemsFile = openRe­ad(­"­GroceryItems.tx­t")
+  DICTIONARY allItems
+  VAR word
+
+  FOR line in ItemsFile 
+      word = myFile.re­adL­ine()
+    IF word IN allItems
+      allItems[word] = allItems[word] + 1
+    ELSE
+      allItems[word] = 1
+    ENDIF
+
+  ItemsFile.cl­ose()
+
+  FOR key in allItems
+    PRINT key : allItems[key]
+
+ENDFUNCTION
+```
+
+## Part 3
+Use C++ and Python to return a number representing how many times a specific item was purchased
+### Variables
+`numPurchases` ---> 
+### Functions
+`getNumOfPurchases(item)` --->
+
+### Pseudocode
+```
+FUNCTION getNumOfPurchases (item as STRING)
+
+  ItemsFile = openRe­ad(­"­GroceryItems.tx­t")
+  VAR count
+
+  FOR line in ItemsFile 
+      word = myFile.re­adL­ine()
+    
+
+  ItemsFile.cl­ose()
+
+```
+
+## Part 4
+Use C++ and Python to produce a text-based histogram listing all items purchased and number of times each item was purchased
