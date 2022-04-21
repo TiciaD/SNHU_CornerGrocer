@@ -123,7 +123,7 @@ FUNCTION getNumOfPurchases (item as STRING)
 
   RETURN count
 
-  ENDFUNCTION
+ENDFUNCTION
 ```
 
 ## Part 4
